@@ -9,7 +9,7 @@ Node ellipse, sphere, box;
 PShader myShader;
 
 void setup() {
-  size(920, 680, P3D);
+  size(1080, 720, P3D);
 
   scene = new Scene(this);
   scene.enableHint(Scene.BACKGROUND, color(0));
@@ -61,7 +61,7 @@ void draw() {
   
   Scene.setUniform(myShader, "lightColor", new Vector(0.4, 0.2, 0.05) );
   Scene.setUniform(myShader, "objectColor", new Vector(0.8, 0.3, 0.1) );
-  Scene.setUniform(myShader, "shiny", new Vector(8.0, 32.0, 32.0) );
+  Scene.setUniform(myShader, "shiny", new Vector(8.0, 8.0, 8.0) );
   
   scene.render();
   
